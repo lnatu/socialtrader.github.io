@@ -1,0 +1,23 @@
+.flex-1 {
+  flex: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+@include responsive(md) {
+  .flex-md-1 {
+    flex: 1;
+  }
+
+  .order-md-1 {
+    order: 1;
+  }
+}
+
+@media only screen and(min-width: 20em) {
+  .order-xs-first {
+    order: -1;
+  }
+}

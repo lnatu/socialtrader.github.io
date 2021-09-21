@@ -1,0 +1,98 @@
+.about {
+  margin-top: 15rem;
+
+  &-banner {
+    height: 60rem;
+
+    &--2 {
+      height: 80rem;
+    }
+
+    &--3 {
+      height: 70rem;
+    }
+  }
+
+  &__title {
+    font-size: 7.2rem;
+    line-height: 8.7rem;
+
+    @include responsive(lg) {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    @include responsive(md) {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+.culture {
+  background-image: url(../../public/images/about/symbol.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &-item + &-item {
+    margin-top: 4rem;
+  }
+}
+
+.values {
+  margin-top: 20rem;
+}
+
+.our-team {
+  margin-top: 14rem;
+
+  &__picture {
+    position: relative;
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  &__emoji:not(.flat) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__name {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  &__members {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -3.5rem 0;
+  }
+
+  &__box {
+    text-align: center;
+    flex: 0 0 20%;
+    padding: 3.5rem 0;
+
+    @include responsive(lg) {
+      flex: 0 0 33.333%;
+    }
+
+    @include responsive(md) {
+      flex: 0 0 50%;
+    }
+
+    @include responsive(sm) {
+      flex: 0 0 100%;
+    }
+  }
+}

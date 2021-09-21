@@ -1,0 +1,14 @@
+.footer {
+  color: rgba($color-white, 0.5);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  text-align: center;
+
+  margin-top: 27rem;
+  padding-bottom: 2.4rem;
+
+  * {
+    font-weight: inherit;
+  }
+}

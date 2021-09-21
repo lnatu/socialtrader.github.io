@@ -1,0 +1,87 @@
+@for $i from 1 through 200 {
+  .mt-#{$i} {
+    margin-top: $i / 10 + rem;
+  }
+  .mr-#{$i} {
+    margin-right: $i / 10 + rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i / 10 + rem;
+  }
+  .ml-#{$i} {
+    margin-left: $i / 10 + rem;
+  }
+
+  .pt-#{$i} {
+    padding-top: $i / 10 + rem;
+  }
+  .pr-#{$i} {
+    padding-right: $i / 10 + rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i / 10 + rem;
+  }
+  .pl-#{$i} {
+    padding-left: $i / 10 + rem;
+  }
+}
+
+@include responsive(lg) {
+  @for $i from 1 through 200 {
+    .mt-lg-#{$i} {
+      margin-top: $i / 10 + rem;
+    }
+    .mr-lg-#{$i} {
+      margin-right: $i / 10 + rem;
+    }
+    .mb-lg-#{$i} {
+      margin-bottom: $i / 10 + rem;
+    }
+    .ml-lg-#{$i} {
+      margin-left: $i / 10 + rem;
+    }
+
+    .pt-lg-#{$i} {
+      padding-top: $i / 10 + rem;
+    }
+    .pr-lg-#{$i} {
+      padding-right: $i / 10 + rem;
+    }
+    .pb-lg-#{$i} {
+      padding-bottom: $i / 10 + rem;
+    }
+    .pl-lg-#{$i} {
+      padding-left: $i / 10 + rem;
+    }
+  }
+}
+
+@include responsive(sm) {
+  @for $i from 1 through 200 {
+    .mt-sm-#{$i} {
+      margin-top: $i / 10 + rem;
+    }
+    .mr-sm-#{$i} {
+      margin-right: $i / 10 + rem;
+    }
+    .mb-sm-#{$i} {
+      margin-bottom: $i / 10 + rem;
+    }
+    .ml-sm-#{$i} {
+      margin-left: $i / 10 + rem;
+    }
+
+    .pt-sm-#{$i} {
+      padding-top: $i / 10 + rem;
+    }
+    .pr-sm-#{$i} {
+      padding-right: $i / 10 + rem;
+    }
+    .pb-sm-#{$i} {
+      padding-bottom: $i / 10 + rem;
+    }
+    .pl-sm-#{$i} {
+      padding-left: $i / 10 + rem;
+    }
+  }
+}

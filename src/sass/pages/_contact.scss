@@ -1,0 +1,23 @@
+body.contact {
+  background-color: $color-white;
+}
+
+.contact-us {
+  height: calc(100vh - 8rem);
+
+  @media only screen and (max-width: 767.5px) {
+    height: auto;
+
+    margin-top: 10rem;
+
+    &-form {
+      margin-top: 10rem;
+    }
+  }
+
+  @include responsive(sm) {
+    &-form {
+      margin-top: 2rem;
+    }
+  }
+}
