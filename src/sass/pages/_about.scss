@@ -1,98 +1,168 @@
+body.about-page {
+  overflow-x: hidden;
+}
+
 .about {
-  margin-top: 15rem;
+  &-section {
+    &__title {
+      font-size: 7.2rem;
+      line-height: 8.7rem;
+      padding-top: 25rem;
 
-  &-banner {
-    height: 60rem;
-
-    &--2 {
-      height: 80rem;
+      @include responsive(md) {
+        font-size: 3.8rem;
+        line-height: 6.6rem;
+        padding-top: 10rem;
+      }
     }
 
-    &--3 {
-      height: 70rem;
-    }
-  }
+    &__banner {
+      background-image: url(../../public/images/about/polygon.png);
+      background-repeat: no-repeat;
+      background-position: center 50px;
+      height: 75rem;
 
-  &__title {
-    font-size: 7.2rem;
-    line-height: 8.7rem;
-
-    @include responsive(lg) {
-      font-size: 5rem;
-      line-height: 6rem;
+      @include responsive(md) {
+        height: 50rem;
+      }
     }
 
-    @include responsive(md) {
-      font-size: 3rem;
-      line-height: 4rem;
+    &__banner--down {
+      background-image: url(../../public/images/about/polygon-down.png);
+      background-repeat: no-repeat;
+      background-position: center -150px;
+      height: 75rem;
+      padding-top: 20rem;
+
+      @include responsive(md) {
+        height: 50rem;
+      }
     }
   }
 }
 
 .culture {
-  background-image: url(../../public/images/about/symbol.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  &-item {
+    &__header {
+      position: relative;
+    }
 
-  &-item + &-item {
-    margin-top: 4rem;
+    &__index {
+      background: linear-gradient(
+        180deg,
+        rgba(44, 212, 176, 0.5) 0%,
+        rgba(44, 212, 176, 0) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      font-size: 10rem;
+      font-weight: 700;
+      line-height: 1;
+
+      margin-left: -1.5rem;
+    }
+
+    &__title {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+      margin-top: -4.5rem;
+    }
+
+    &__body {
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      font-weight: 300;
+    }
+
+    @include responsive(md) {
+      &__index {
+        font-size: 7rem;
+
+        margin-left: 0;
+      }
+
+      &__title {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: -2.5rem;
+      }
+
+      &__body {
+        font-size: 1.6rem;
+        line-height: 3rem;
+      }
+    }
   }
 }
 
-.values {
-  margin-top: 20rem;
+.value {
+  &-box {
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    padding: 2rem;
+    position: relative;
+
+    background: #000;
+    background-clip: padding-box;
+    border: solid 1px transparent;
+    border-radius: 4px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -1px;
+      border-radius: inherit;
+      background: linear-gradient(to bottom, rgba($color-white, 0.27), #000);
+    }
+  }
 }
 
 .our-team {
-  margin-top: 14rem;
+  padding-bottom: 10rem;
+}
 
-  &__picture {
-    position: relative;
+.team-member {
+  &__avatar {
+    background-image: url(../../public/images/about/team/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
 
-    img {
-      vertical-align: middle;
+    @include responsive(md) {
+      background-size: 100px 100px;
+
+      img {
+        width: 100px;
+      }
     }
   }
+}
 
-  &__emoji:not(.flat) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
+.team-member {
   &__name {
     font-size: 2rem;
     line-height: 2.4rem;
-    font-weight: 600;
   }
 
-  &__title {
+  &__role {
     font-size: 1.6rem;
     line-height: 2rem;
   }
 
-  &__members {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -3.5rem 0;
-  }
-
-  &__box {
-    text-align: center;
-    flex: 0 0 20%;
-    padding: 3.5rem 0;
-
-    @include responsive(lg) {
-      flex: 0 0 33.333%;
+  @include responsive(md) {
+    &__name {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
     }
 
-    @include responsive(md) {
-      flex: 0 0 50%;
-    }
-
-    @include responsive(sm) {
-      flex: 0 0 100%;
+    &__role {
+      font-size: 1rem;
     }
   }
 }

@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+@include responsive(lg) {
+  .text-lg-center {
+    text-align: center;
+  }
+}
+
 // Colors
 .text-dark {
   color: $color-dark;
@@ -49,13 +59,8 @@
   line-height: 9rem;
 
   @include responsive(lg) {
-    font-size: 4rem;
+    font-size: 3.8rem;
     line-height: 5rem;
-  }
-
-  @include responsive(md) {
-    font-size: 3rem;
-    line-height: 4rem;
   }
 }
 
@@ -77,13 +82,16 @@
     font-size: 3rem;
     line-height: 4rem;
   }
-
-  @include responsive(sm) {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
 }
 
 .font-normal {
-  font-weight: 400;
+  font-weight: 400 !important;
+}
+
+.font-semibold {
+  font-weight: 600 !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
 }

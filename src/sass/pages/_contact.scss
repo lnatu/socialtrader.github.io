@@ -1,4 +1,4 @@
-body.contact {
+body.contact-page {
   background-color: $color-white;
 }
 
@@ -16,6 +16,7 @@ body.contact {
   }
 
   @include responsive(sm) {
+    margin-top: 3rem;
     &-form {
       margin-top: 2rem;
     }

@@ -14,96 +14,117 @@
     <link rel="stylesheet" href="./src/css/bootstrap/grid.min.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
-  <body>
-    <header>
-      <div class="container header">
-        <section class="logo">
-          <a href="/">
-            <img src="./public/images/logo.svg" alt="Traderworm logo" />
-          </a>
-        </section>
-        <section class="nav">
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link active" href="https://lnatu.github.io/socialtrader.github.io/">Home</a>
+  <body class="home-page">
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <section class="logo">
+            <a href="/">
+              <img src="./public/images/logo.svg" alt="Traderworm logo" />
+            </a>
+          </section>
+          <section class="nav">
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a class="nav-link nav-link--home-page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link--about-page" href="about.html"
+                    >About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link--roadmap-page" href="roadmap.html"
+                    >Road map</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link--blog-page" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link--contact-page" href="contact.html"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <section class="social-media">
+            <ul class="social-media__list">
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  <img
+                    src="public/images/icons/facebook.svg"
+                    alt="facebook logo"
+                  />
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  <img
+                    src="public/images/icons/telegram.svg"
+                    alt="telegram logo"
+                  />
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  <img
+                    src="public/images/icons/linkedin.svg"
+                    alt="linkedin logo"
+                  />
+                </a>
               </li>
             </ul>
-          </nav>
-        </section>
-        <section class="social-media">
-          <ul class="social-media__list">
-            <li class="social-media__item">
-              <a class="social-media__link" href="#">
-                <img
-                  src="public/images/icons/facebook.svg"
-                  alt="facebook logo"
-                />
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="#">
-                <img
-                  src="public/images/icons/telegram.svg"
-                  alt="telegram logo"
-                />
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="#">
-                <img
-                  src="public/images/icons/linkedin.svg"
-                  alt="linkedin logo"
-                />
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </section>
+          </section>
+          <section class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </section>
+        </div>
       </div>
     </header>
 
     <nav class="nav-mobile">
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link active" href="/">Home</a>
+          <a class="nav-link nav-link--home-page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About us</a>
+          <a class="nav-link nav-link--about-page" href="about.html"
+            >About us</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link nav-link--about-page" href="roadmap.html"
+            >Road map</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact us</a>
+          <a class="nav-link nav-link--blog-page" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link--contact-page" href="contact.html"
+            >Contact us</a
+          >
         </li>
       </ul>
     </nav>
 
-    <section class="home mt-130">
+    <section class="home mt-80">
       <div class="home-banner container">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-lg-5">
-            <div class="">
+            <div class="text-lg-center mt-100">
               <h1 class="text-lead-xl text-white">
                 Crypto’s<br />social network
               </h1>
               <div class="mt-48">
                 <button
                   class="
+                    w-lg-full
                     text-success
                     rounded
                     button button--lg button-outline button-outline--info
@@ -121,7 +142,7 @@
             </div>
           </div>
 
-          <div class="col-lg-7">
+          <div class="col-lg-7 order-lg-last order-xs-first">
             <div class="banner-graphic">
               <div class="banner-graphic__wrapper">
                 <div>
@@ -160,16 +181,16 @@
       </div>
     </section>
 
-    <section class="overview container">
-      <div>
+    <section class="overview container td-container">
+      <div class="overview-box__content">
         <h2 class="text-white text-lg">What we’re building...</h2>
       </div>
-      <div class="mt-120">
-        <div class="row align-items-center">
+      <div class="mt-120 mt-lg-70">
+        <div class="row align-items-center overview-item">
           <div class="col-lg-9">
-            <div class="mt-lg-30">
+            <div class="overview-box__content mt-lg-30">
               <h3 class="overview-box__title text-white">The platform</h3>
-              <div class="overview-box__text text-grey-2 mt-30">
+              <div class="overview-box__text text-grey-2 mt-30 mt-lg-10">
                 <p>
                   Create and build your own personal profile,<br />
                   community groups, pages, and brands.
@@ -191,7 +212,7 @@
           </div>
         </div>
 
-        <div class="row align-items-center mt-120">
+        <div class="row align-items-center overview-item">
           <div class="col-lg-3">
             <div class="overview__icon text-center">
               <img
@@ -201,7 +222,7 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <div class="mt-lg-30">
+            <div class="overview-box__content mt-lg-30 pl-100 pl-lg-0">
               <h3 class="overview-box__title text-white">
                 A tokenized ecosystem
               </h3>
@@ -221,9 +242,9 @@
           </div>
         </div>
 
-        <div class="row align-items-center mt-120">
+        <div class="row align-items-center overview-item">
           <div class="col-lg-9">
-            <div class="mt-lg-30">
+            <div class="overview-box__content mt-lg-30">
               <h3 class="overview-box__title text-white">Rewards system</h3>
               <div class="overview-box__text text-grey-2 mt-30">
                 <p>
@@ -248,7 +269,7 @@
           </div>
         </div>
 
-        <div class="row align-items-center mt-120">
+        <div class="row align-items-center overview-item">
           <div class="col-lg-3">
             <div class="overview__icon text-center">
               <img
@@ -258,7 +279,7 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <div class="mt-lg-30">
+            <div class="overview-box__content mt-lg-30 pl-100 pl-lg-0">
               <h3 class="overview-box__title text-white">NFT Marketplace</h3>
               <div class="overview-box__text text-grey-2 mt-30">
                 <p>

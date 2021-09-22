@@ -32,6 +32,12 @@
     /* Microsoft Edge */
     color: #b4b2bd;
   }
+
+  @include responsive(md) {
+    min-height: 4rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
 }
 
 textarea.input {

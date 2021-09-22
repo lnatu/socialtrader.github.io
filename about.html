@@ -14,434 +14,198 @@
     <link rel="stylesheet" href="./src/css/bootstrap/grid.min.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
-  <body>
-    <header>
-      <div class="container header">
-        <section class="logo">
-          <a href="/">
-            <img src="./public/images/logo.svg" alt="Traderworm logo" />
-          </a>
-        </section>
-        <section class="nav">
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link active" href="/">Home</a>
+  <body class="about-page">
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <section class="logo">
+            <a href="/">
+              <img src="./public/images/logo.svg" alt="Traderworm logo" />
+            </a>
+          </section>
+          <section class="nav">
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a class="nav-link nav-link--home-page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link--about-page" href="about.html"
+                    >About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-link--roadmap-page"
+                    href="roadmap.html"
+                    >Road map</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link--blog-page" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-link--contact-page"
+                    href="contact.html"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <section class="social-media">
+            <ul class="social-media__list">
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  <img
+                    src="public/images/icons/facebook.svg"
+                    alt="facebook logo"
+                  />
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  <img
+                    src="public/images/icons/telegram.svg"
+                    alt="telegram logo"
+                  />
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  <img
+                    src="public/images/icons/linkedin.svg"
+                    alt="linkedin logo"
+                  />
+                </a>
               </li>
             </ul>
-          </nav>
-        </section>
-        <section class="social-media">
-          <ul class="social-media__list">
-            <li class="social-media__item">
-              <a class="social-media__link" href="#">
-                <img
-                  src="public/images/icons/facebook.svg"
-                  alt="facebook logo"
-                />
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="#">
-                <img
-                  src="public/images/icons/telegram.svg"
-                  alt="telegram logo"
-                />
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="#">
-                <img
-                  src="public/images/icons/linkedin.svg"
-                  alt="linkedin logo"
-                />
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </section>
+          </section>
+          <section class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </section>
+        </div>
       </div>
     </header>
 
     <nav class="nav-mobile">
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link active" href="/">Home</a>
+          <a class="nav-link nav-link--home-page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About us</a>
+          <a class="nav-link nav-link--about-page" href="about.html"
+            >About us</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link nav-link--about-page" href="roadmap.html"
+            >Road map</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact us</a>
+          <a class="nav-link nav-link--blog-page" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link--contact-page" href="contact.html"
+            >Contact us</a
+          >
         </li>
       </ul>
     </nav>
 
-    <section class="about">
+    <section class="about-section mt-20">
       <div class="container">
-        <div class="about-banner text-center text-white">
-          <h1 class="about__title">
-            Bringing the Crypto<br />Community Together.
-          </h1>
+        <div class="about-section__banner text-center">
+          <div>
+            <h1 class="about-section__title text-white">
+              Bringing the Crypto<br />Community Together.
+            </h1>
+          </div>
         </div>
 
-        <div class="about-banner--2 text-center text-grey-2">
+        <div class="text-center text-grey-2">
           <p class="text-p">
             We are connecting people with projects, communities, services and
-            products.
+            products.</p>
           </p>
-          <div class="mt-40">
-            <h2 class="title">
-              Exploring the crypto space has never been easier.
-            </h2>
-          </div>
+          <h2 class="title font-semibold mt-30">
+            Exploring the crypto space has never been easier.
+          </h2>
         </div>
 
-        <div class="about-banner--3 text-center text-grey-2">
-          <blockquote class="text-p">
-            <i
-              >Our Mission: “To bring the crypto community together to
-              collaborate, communicate, create and share<br />
-              content that is beneficial and rewardable”.</i
-            >
-          </blockquote>
-          <blockquote class="text-p mt-40">
-            <i
-              >Our Vision: “Utilizing blockchain technology to integrate a
-              social platform with a monetized ecosystem<br />
-              that’s self sustaining and valuable to the crypto world”</i
-            >
-          </blockquote>
-        </div>
-
-        <div class="culture text-center text-grey-2">
-          <h3 class="title">Our Culture</h3>
-
-          <div class="culture-list mt-100">
-            <div class="culture-item">
-              <h4 class="title font-normal">1. WE SUCEED TOGETHER</h4>
-              <p class="text-p mt-40">
-                With our core values in mind, we're always<br />searching for
-                the best people with the greatest<br />potential to change the
-                world with us.
-              </p>
+        <div class="about-section__banner--down text-center">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <blockquote class="text-grey-2">
+                <i
+                  >Our Mission: “To bring the crypto community together to
+                  collaborate, communicate, create and share content that is
+                  beneficial and rewardable”.</i
+                >
+              </blockquote>
             </div>
-            <div class="culture-item">
-              <h4 class="title font-normal">2. WE CARE</h4>
-              <p class="text-p mt-40">
-                Traderworm has an open-door policy that<br />
-                welcomes everyone - no matter their background<br />or level or
-                experience.
-              </p>
-            </div>
-            <div class="culture-item">
-              <h4 class="title font-normal">3. OWNERSHIP MINDSET</h4>
-              <p class="text-p mt-40">
-                Making decisions, taking responsiblity; Our team<br />
-                are passionate individuals and partners from<br />
-                around the world.
-              </p>
+            <div class="col-lg-6">
+              <blockquote class="text-grey-2">
+                <i
+                  >Our Vision: “Utilizing blockchain technology to integrate a
+                  social platform with a monetized ecosystem that’s self
+                  sustaining and valuable to the crypto world”.</i
+                >
+              </blockquote>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="values">
-            <div class="container">
-              <div class="row g-5">
-                <div class="col-lg-6 offset-lg-6">
-                  <div class="text-center text-p">
-                    <h4 class="font-normal">Transparent</h4>
-                    <p class="mt-40">
-                      We will apply principles of transparency, honesty,
-                      sharing, collaboration, public benefit, and integrity in
-                      all aspects of our work.
-                    </p>
-                  </div>
+    <section class="culture">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="text-lg text-white">Our Culture</h3>
+        </div>
+        <div class="mt-100 mt-lg-30">
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <div class="culture-item text-lg-center text-grey-2">
+                <div class="culture-item__header">
+                  <p class="culture-item__index">1</p>
+                  <h4 class="culture-item__title">WE SUCCEED TOGETHER</h4>
                 </div>
-
-                <div class="col-lg-6">
-                  <div class="text-center text-p">
-                    <h4 class="font-normal">Development and innovation</h4>
-                    <p class="mt-40">
-                      Integrity and value We understand and care about our own
-                      people, partners, customers, and the communities to which
-                      we belong.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 offset-lg-6">
-                  <div class="text-center text-p">
-                    <h4 class="font-normal">Integrity and value</h4>
-                    <p class="mt-40">
-                      We understand and care about our own people, partners,
-                      customers, and the communities to which we belong.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="text-center text-p">
-                    <h4 class="font-normal">Empathy</h4>
-                    <p class="mt-40">
-                      We will strive to see others’ perspectives in order to
-                      create a friendly beneficial environment for the
-                      expression of ideas. We value everyone's thoughts,
-                      feelings, and opinion.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 offset-lg-6">
-                  <div class="text-center text-p">
-                    <h4 class="font-normal">Fun</h4>
-                    <p class="mt-40">
-                      We take pride in making our workplace a fun, relaxed and
-                      enjoyable while bringing positivity to our users and
-                      community.
-                    </p>
-                  </div>
+                <div class="culture-item__body mt-20">
+                  With our core values in mind, we're always searching for the
+                  best people with the greatest potential to change the world
+                  with us.
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="our-team">
-          <div class="container">
-            <div class="text-lg">
-              <h4 class="text-white">Our Team</h4>
-            </div>
-            <div class="mt-25">
-              <div class="our-team__members">
-                <div class="our-team__box">
-                  <div class="our-team__member">
-                    <div class="our-team__picture">
-                      <img
-                        src="./public/images/about/team/bg.png"
-                        alt="team face emoji"
-                      />
-                      <img
-                        class="our-team__emoji"
-                        src="./public/images/about/team/male-emoji-1.png"
-                        alt="team face emoji"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-white mt-40">
-                    <h5 class="our-team__name">Chi Binh Nguyen</h5>
-                    <div class="d-flex justify-content-center mt-10">
-                      <p class="our-team__title mr-10">Co - Founder</p>
-                      <a href="https://www.linkedin.com/">
-                        <img
-                          src="public/images/icons/linkedin.svg"
-                          alt="linkedin"
-                        />
-                      </a>
-                    </div>
-                  </div>
+            <div class="col-lg-6 offset-lg-3">
+              <div class="culture-item text-center text-lg-center text-grey-2">
+                <div class="culture-item__header">
+                  <p class="culture-item__index">2</p>
+                  <h4 class="culture-item__title">WE CARE</h4>
                 </div>
-                <div class="our-team__box">
-                  <div class="our-team__member">
-                    <div class="our-team__picture">
-                      <img
-                        src="./public/images/about/team/bg.png"
-                        alt="team face emoji"
-                      />
-                      <img
-                        class="our-team__emoji"
-                        src="./public/images/about/team/male-emoji-2.png"
-                        alt="team face emoji"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-white mt-40">
-                    <h5 class="our-team__name">Michael Tran</h5>
-                    <div class="d-flex justify-content-center mt-10">
-                      <p class="our-team__title mr-10">Co - Founder, CTO</p>
-                      <a href="https://www.linkedin.com/">
-                        <img
-                          src="public/images/icons/linkedin.svg"
-                          alt="linkedin"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="our-team__box">
-                  <div class="our-team__member">
-                    <div class="our-team__picture">
-                      <img
-                        src="./public/images/about/team/bg.png"
-                        alt="team face emoji"
-                      />
-                      <img
-                        class="our-team__emoji"
-                        src="./public/images/about/team/male-emoji-3.png"
-                        alt="team face emoji"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-white mt-40">
-                    <h5 class="our-team__name">Marcus Hoang</h5>
-                    <div class="d-flex justify-content-center mt-10">
-                      <p class="our-team__title mr-10">Designer</p>
-                      <a href="https://www.linkedin.com/">
-                        <img
-                          src="public/images/icons/linkedin.svg"
-                          alt="linkedin"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="our-team__box">
-                  <div class="our-team__member">
-                    <div class="our-team__picture">
-                      <img
-                        src="./public/images/about/team/bg.png"
-                        alt="team face emoji"
-                      />
-                      <img
-                        class="our-team__emoji"
-                        src="./public/images/about/team/female-emoji-1.png"
-                        alt="team face emoji"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-white mt-40">
-                    <h5 class="our-team__name">Mike Nguyen</h5>
-                    <div class="d-flex justify-content-center mt-10">
-                      <p class="our-team__title mr-10">Product Manager</p>
-                      <a href="https://www.linkedin.com/">
-                        <img
-                          src="public/images/icons/linkedin.svg"
-                          alt="linkedin"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="our-team__box">
-                  <div class="our-team__member">
-                    <div class="our-team__picture">
-                      <img
-                        src="./public/images/about/team/bg.png"
-                        alt="team face emoji"
-                      />
-                      <img
-                        class="our-team__emoji"
-                        src="./public/images/about/team/female-emoji-2.png"
-                        alt="team face emoji"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-white mt-40">
-                    <h5 class="our-team__name">Emily</h5>
-                    <div class="d-flex justify-content-center mt-10">
-                      <p class="our-team__title mr-10">Product Tester</p>
-                      <a href="https://www.linkedin.com/">
-                        <img
-                          src="public/images/icons/linkedin.svg"
-                          alt="linkedin"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="our-team__box">
-                  <div class="our-team__member">
-                    <div class="our-team__picture">
-                      <img
-                        class="our-team__emoji flat"
-                        src="./public/images/about/team/male-emoji-2.png"
-                        alt="team face emoji"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-white mt-40">
-                    <h5 class="our-team__name">Vu Tien</h5>
-                    <div class="d-flex justify-content-center mt-10">
-                      <p class="our-team__title mr-10">Front end developer</p>
-                      <a href="https://www.linkedin.com/">
-                        <img
-                          src="public/images/icons/linkedin.svg"
-                          alt="linkedin"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="our-team__box">
-                  <div class="our-team__member">
-                    <div class="our-team__picture">
-                      <img
-                        class="our-team__emoji flat"
-                        src="./public/images/about/team/male-emoji-2.png"
-                        alt="team face emoji"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-white mt-40">
-                    <h5 class="our-team__name">Khanh Tuong Nguyen</h5>
-                    <div class="d-flex justify-content-center mt-10">
-                      <p class="our-team__title mr-10">Back end developer</p>
-                      <a href="https://www.linkedin.com/">
-                        <img
-                          src="public/images/icons/linkedin.svg"
-                          alt="linkedin"
-                        />
-                      </a>
-                    </div>
-                  </div>
+                <div class="culture-item__body mt-20">
+                  Traderworm has an open-door policy that welcomes everyone - no
+                  matter their background or level or experience.
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="container mt-100">
-            <div class="text-lg">
-              <h4 class="text-white">Advisors</h4>
-            </div>
-            <div class="mt-25">
-              <div class="our-team__members">
-                <div class="our-team__box">
-                  <div class="our-team__member">
-                    <div class="our-team__picture">
-                      <img
-                        class="our-team__emoji flat"
-                        src="./public/images/about/team/male-emoji-1.png"
-                        alt="team face emoji"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-white mt-40">
-                    <h5 class="our-team__name">Carlos Townsend</h5>
-                    <div class="d-flex justify-content-center mt-10">
-                      <p class="our-team__title mr-10">Network security</p>
-                      <a href="https://www.linkedin.com/">
-                        <img
-                          src="public/images/icons/linkedin.svg"
-                          alt="linkedin"
-                        />
-                      </a>
-                    </div>
-                  </div>
+            <div class="col-lg-6 offset-lg-6">
+              <div class="culture-item text-right text-lg-center text-grey-2">
+                <div class="culture-item__header">
+                  <p class="culture-item__index">3</p>
+                  <h4 class="culture-item__title">OWNERSHIP MINDSET</h4>
+                </div>
+                <div class="culture-item__body mt-20">
+                  Making decisions, taking responsiblity; Our team consists of
+                  passionate individuals and partners from all parts of the
+                  globe.
                 </div>
               </div>
             </div>
@@ -450,10 +214,281 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <h3>Copyright © Traderworm 2021</h3>
-      <p>Terms and conditions • Privacy policy • About us</p>
-    </footer>
+    <section class="values mt-160 mt-lg-50">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="text-lg text-grey-2">Traderworms’ Core Value</h3>
+        </div>
+
+        <div class="mt-130 mt-lg-50">
+          <div class="row g-5">
+            <div class="col-lg-4 h-full">
+              <div class="value-box text-center text-grey-2">
+                <div class="value-box__title font-bold">Transparent</div>
+                <div class="value-box__body mt-30">
+                  We will apply principles of transparency, honesty, sharing,
+                  collaboration, public benefit, and integrity in all aspects of
+                  our work.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 h-full">
+              <div class="value-box text-center text-grey-2">
+                <div class="value-box__title font-bold">
+                  Development and innovation
+                </div>
+                <div class="value-box__body mt-30">
+                  We are committed to innovation and continuous improvement with
+                  our product and team, with a goal of achieving long term
+                  success.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 h-full">
+              <div class="value-box text-center text-grey-2">
+                <div class="value-box__title font-bold">
+                  Integrity and value
+                </div>
+                <div class="value-box__body mt-30">
+                  We understand and care about our own people, partners,
+                  customers, and the communities to which we belong.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 offset-lg-2 h-full mt-120 mt-lg-0">
+              <div class="value-box text-center text-grey-2">
+                <div class="value-box__title font-bold">Empathy</div>
+                <div class="value-box__body mt-30">
+                  We will strive to see others’ perspectives in order to create
+                  a friendly beneficial environment for the expression of ideas.
+                  We value everyone's thoughts, feelings, and opinion..
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 h-full mt-120 mt-lg-0">
+              <div class="value-box text-center text-grey-2">
+                <div class="value-box__title font-bold">Fun</div>
+                <div class="value-box__body mt-30">
+                  We take pride in making our workplace a fun, relaxed and
+                  enjoyable while bringing positivity to our users and
+                  community.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-team mt-200 mt-lg-50">
+      <div class="container">
+        <div class="text-center text-lg text-white">
+          <h3>Our Team</h3>
+        </div>
+
+        <div class="mt-120 mt-lg-50">
+          <div class="row g-5">
+            <div class="col-lg-2 col-6 offset-lg-1">
+              <div class="team-member text-center">
+                <div class="team-member__avatar">
+                  <img
+                    src="./public/images/about/team/male-emoji-1.png"
+                    alt="male emoji"
+                  />
+                </div>
+                <div class="team-member__desc text-white">
+                  <h4 class="team-member__name">Chi Binh Nguyen</h4>
+                  <p class="team-member__role mt-4">Co - Founder</p>
+                  <div class="mt-12">
+                    <a href="#" class="team-member__link">
+                      <img
+                        src="./public/images/icons/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6">
+              <div class="team-member text-center">
+                <div class="team-member__avatar">
+                  <img
+                    src="./public/images/about/team/male-emoji-2.png"
+                    alt="male emoji"
+                  />
+                </div>
+                <div class="team-member__desc text-white">
+                  <h4 class="team-member__name">Michael Tran</h4>
+                  <p class="team-member__role mt-4">Co - Founder, CTO</p>
+                  <div class="mt-12">
+                    <a href="#" class="team-member__link">
+                      <img
+                        src="./public/images/icons/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-4">
+              <div class="team-member text-center">
+                <div class="team-member__avatar">
+                  <img
+                    src="./public/images/about/team/male-emoji-3.png"
+                    alt="male emoji"
+                  />
+                </div>
+                <div class="team-member__desc text-white">
+                  <h4 class="team-member__name">Marcus Hoang</h4>
+                  <p class="team-member__role mt-4">Designer</p>
+                  <div class="mt-12">
+                    <a href="#" class="team-member__link">
+                      <img
+                        src="./public/images/icons/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-4">
+              <div class="team-member text-center">
+                <div class="team-member__avatar">
+                  <img
+                    src="./public/images/about/team/male-emoji-1.png"
+                    alt="male emoji"
+                  />
+                </div>
+                <div class="team-member__desc text-white">
+                  <h4 class="team-member__name">Mike Nguyen</h4>
+                  <p class="team-member__role mt-4">Product Research</p>
+                  <div class="mt-12">
+                    <a href="#" class="team-member__link">
+                      <img
+                        src="./public/images/icons/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-4">
+              <div class="team-member text-center">
+                <div class="team-member__avatar">
+                  <img
+                    src="./public/images/about/team/female-emoji-2.png"
+                    alt="male emoji"
+                  />
+                </div>
+                <div class="team-member__desc text-white">
+                  <h4 class="team-member__name">Emily</h4>
+                  <p class="team-member__role mt-4">Project Manager</p>
+                  <div class="mt-12">
+                    <a href="#" class="team-member__link">
+                      <img
+                        src="./public/images/icons/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 offset-lg-4">
+              <div class="team-member text-center mt-100 mt-lg-0">
+                <div class="team-member__avatar">
+                  <img
+                    src="./public/images/about/team/male-emoji-3.png"
+                    alt="male emoji"
+                  />
+                </div>
+                <div class="team-member__desc text-white">
+                  <h4 class="team-member__name">Vu Tien</h4>
+                  <p class="team-member__role mt-4">Front end developer</p>
+                  <div class="mt-12">
+                    <a href="#" class="team-member__link">
+                      <img
+                        src="./public/images/icons/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6">
+              <div class="team-member text-center mt-100 mt-lg-0">
+                <div class="team-member__avatar">
+                  <img
+                    src="./public/images/about/team/male-emoji-2.png"
+                    alt="male emoji"
+                  />
+                </div>
+                <div class="team-member__desc text-white">
+                  <h4 class="team-member__name">Khanh Tuong Nguyen</h4>
+                  <p class="team-member__role mt-4">Back end developer</p>
+                  <div class="mt-12">
+                    <a href="#" class="team-member__link">
+                      <img
+                        src="./public/images/icons/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-100 mt-lg-50">
+        <div class="text-center text-lg text-white">
+          <h3>Advisors</h3>
+        </div>
+
+        <div class="mt-20">
+          <div class="row">
+            <div class="col-lg-2 offset-lg-5">
+              <div class="team-member text-center">
+                <div class="team-member__avatar">
+                  <img
+                    src="./public/images/about/team/male-emoji-2.png"
+                    alt="male emoji"
+                  />
+                </div>
+                <div class="team-member__desc text-white">
+                  <h4 class="team-member__name">Carlos Townsend</h4>
+                  <p class="team-member__role mt-4">Network security</p>
+                  <div class="mt-12">
+                    <a href="#" class="team-member__link">
+                      <img
+                        src="./public/images/icons/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./src/js/lib/jquery.min.js"></script>
     <script src="./src/js/main.js"></script>

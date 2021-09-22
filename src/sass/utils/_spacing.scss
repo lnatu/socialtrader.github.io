@@ -1,87 +1,87 @@
-@for $i from 1 through 200 {
+@for $i from 0 through 200 {
   .mt-#{$i} {
-    margin-top: $i / 10 + rem;
+    margin-top: $i / 10 + rem !important;
   }
   .mr-#{$i} {
-    margin-right: $i / 10 + rem;
+    margin-right: $i / 10 + rem !important;
   }
   .mb-#{$i} {
-    margin-bottom: $i / 10 + rem;
+    margin-bottom: $i / 10 + rem !important;
   }
   .ml-#{$i} {
-    margin-left: $i / 10 + rem;
+    margin-left: $i / 10 + rem !important;
   }
 
   .pt-#{$i} {
-    padding-top: $i / 10 + rem;
+    padding-top: $i / 10 + rem !important;
   }
   .pr-#{$i} {
-    padding-right: $i / 10 + rem;
+    padding-right: $i / 10 + rem !important;
   }
   .pb-#{$i} {
-    padding-bottom: $i / 10 + rem;
+    padding-bottom: $i / 10 + rem !important;
   }
   .pl-#{$i} {
-    padding-left: $i / 10 + rem;
+    padding-left: $i / 10 + rem !important;
   }
 }
 
 @include responsive(lg) {
-  @for $i from 1 through 200 {
+  @for $i from 0 through 200 {
     .mt-lg-#{$i} {
-      margin-top: $i / 10 + rem;
+      margin-top: $i / 10 + rem !important;
     }
     .mr-lg-#{$i} {
-      margin-right: $i / 10 + rem;
+      margin-right: $i / 10 + rem !important;
     }
     .mb-lg-#{$i} {
-      margin-bottom: $i / 10 + rem;
+      margin-bottom: $i / 10 + rem !important;
     }
     .ml-lg-#{$i} {
-      margin-left: $i / 10 + rem;
+      margin-left: $i / 10 + rem !important;
     }
 
     .pt-lg-#{$i} {
-      padding-top: $i / 10 + rem;
+      padding-top: $i / 10 + rem !important;
     }
     .pr-lg-#{$i} {
-      padding-right: $i / 10 + rem;
+      padding-right: $i / 10 + rem !important;
     }
     .pb-lg-#{$i} {
-      padding-bottom: $i / 10 + rem;
+      padding-bottom: $i / 10 + rem !important;
     }
     .pl-lg-#{$i} {
-      padding-left: $i / 10 + rem;
+      padding-left: $i / 10 + rem !important;
     }
   }
 }
 
 @include responsive(sm) {
-  @for $i from 1 through 200 {
+  @for $i from 0 through 200 {
     .mt-sm-#{$i} {
-      margin-top: $i / 10 + rem;
+      margin-top: $i / 10 + rem !important;
     }
     .mr-sm-#{$i} {
-      margin-right: $i / 10 + rem;
+      margin-right: $i / 10 + rem !important;
     }
     .mb-sm-#{$i} {
-      margin-bottom: $i / 10 + rem;
+      margin-bottom: $i / 10 + rem !important;
     }
     .ml-sm-#{$i} {
-      margin-left: $i / 10 + rem;
+      margin-left: $i / 10 + rem !important;
     }
 
     .pt-sm-#{$i} {
-      padding-top: $i / 10 + rem;
+      padding-top: $i / 10 + rem !important;
     }
     .pr-sm-#{$i} {
-      padding-right: $i / 10 + rem;
+      padding-right: $i / 10 + rem !important;
     }
     .pb-sm-#{$i} {
-      padding-bottom: $i / 10 + rem;
+      padding-bottom: $i / 10 + rem !important;
     }
     .pl-sm-#{$i} {
-      padding-left: $i / 10 + rem;
+      padding-left: $i / 10 + rem !important;
     }
   }
 }

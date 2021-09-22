@@ -1,10 +1,19 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0rem 4rem;
-  height: 8rem;
   background-color: $color-black;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+  }
+
+  @include responsive(md) {
+    padding: 0 2rem;
+  }
 }
 
 .nav {
@@ -82,16 +91,22 @@
   background-color: #000;
   z-index: 99;
   position: fixed;
-  top: -100%;
+  top: 0;
   left: 0;
-  height: 100vh;
+  bottom: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
+
+  overflow: hidden;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  transition: top 0.3s;
+  transition: transform 1s cubic-bezier(0.45, 1.61, 0.56, 1.01);
+
+  transform: translateY(-100%);
 
   .nav-list {
     display: flex;
@@ -110,7 +125,7 @@
   }
 
   &.active {
-    top: 0;
+    transform: translateY(0);
   }
 }
 

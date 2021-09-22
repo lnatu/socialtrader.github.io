@@ -1,0 +1,8 @@
+.td-container {
+  max-width: 100.14rem;
+
+  @include responsive(sm) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
