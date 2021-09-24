@@ -1,9 +1,11 @@
 .home-banner {
   display: flex;
   justify-content: space-between;
+  margin-top: 10rem;
 
   @include responsive(lg) {
     flex-direction: column;
+    margin-top: 0;
   }
 }
 
