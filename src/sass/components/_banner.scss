@@ -13,42 +13,63 @@
   &__coin {
     position: absolute;
     z-index: 10;
-    // animation: 2s infinite spanAnimation;
-
-    @include responsive(md) {
-      img {
-        width: 50%;
-      }
-    }
+    animation: 2s infinite spanAnimation;
 
     &--lead {
-      top: 2%;
+      top: 12%;
       left: 4rem;
       animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     }
 
     &--sub-1 {
-      top: 15rem;
-      left: 45%;
+      top: 15%;
+      left: 43%;
       animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
     }
 
     &--sub-2 {
-      top: 10rem;
-      right: 10rem;
+      top: 10%;
+      right: 10%;
       animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
     }
 
     &--sub-3 {
-      top: 45%;
-      right: 20rem;
+      top: 40%;
+      right: 20%;
       animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
     }
 
     &--sub-4 {
-      bottom: 14rem;
-      left: 25rem;
+      bottom: 20%;
+      left: 30%;
       animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    }
+
+    @include responsive(sm) {
+      &--lead {
+        top: 12%;
+        left: 4%;
+      }
+
+      &--sub-1 {
+        top: 20%;
+        left: 43%;
+      }
+
+      &--sub-2 {
+        top: 25%;
+        right: 5%;
+      }
+
+      &--sub-3 {
+        top: 40%;
+        right: 20%;
+      }
+
+      &--sub-4 {
+        bottom: 20%;
+        left: 30%;
+      }
     }
   }
 }

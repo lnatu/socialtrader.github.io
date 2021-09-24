@@ -5,20 +5,9 @@ body.contact-page {
 .contact-us {
   height: calc(100vh - 8rem);
 
+  padding: 50px 0;
+
   @media only screen and (max-width: 767.5px) {
     height: auto;
-
-    margin-top: 10rem;
-
-    &-form {
-      margin-top: 10rem;
-    }
-  }
-
-  @include responsive(sm) {
-    margin-top: 3rem;
-    &-form {
-      margin-top: 2rem;
-    }
   }
 }

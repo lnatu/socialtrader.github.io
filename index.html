@@ -116,7 +116,7 @@
     <section class="home mt-80">
       <div class="home-banner container">
         <div class="row">
-          <div class="col-lg-5">
+          <div class="col-xl-5">
             <div class="text-lg-center mt-100">
               <h1 class="text-lead-xl text-white">
                 Crypto’s<br />social network
@@ -142,38 +142,98 @@
             </div>
           </div>
 
-          <div class="col-lg-7 order-lg-last order-xs-first">
+          <div class="col-xl-7 order-xl-last order-xs-first">
             <div class="banner-graphic">
               <div class="banner-graphic__wrapper">
                 <div>
-                  <img src="./public/images/banner/looper.png" alt="looper" />
+                  <picture>
+                    <source
+                      media="(min-width:414px)"
+                      srcset="./public/images/banner/looper.png"
+                    />
+                    <source
+                      media="(min-width:320px)"
+                      srcset="./public/images/banner/looper-small.png"
+                    />
+                    <img src="./public/images/banner/looper.png" alt="looper" />
+                  </picture>
                 </div>
 
-                <div class="banner-graphic__coin banner-graphic__coin--lead">
+                <picture
+                  class="banner-graphic__coin banner-graphic__coin--lead"
+                >
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./public/images/banner/bitcoin.png"
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="./public/images/banner/bitcoin-small.png"
+                  />
                   <img src="./public/images/banner/bitcoin.png" alt="bitcoin" />
-                </div>
+                </picture>
 
-                <div class="banner-graphic__coin banner-graphic__coin--sub-1">
+                <picture
+                  class="banner-graphic__coin banner-graphic__coin--sub-1"
+                >
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./public/images/banner/binance.png"
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="./public/images/banner/binance-small.png"
+                  />
                   <img src="./public/images/banner/binance.png" alt="binance" />
-                </div>
+                </picture>
 
-                <div class="banner-graphic__coin banner-graphic__coin--sub-2">
+                <picture
+                  class="banner-graphic__coin banner-graphic__coin--sub-2"
+                >
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./public/images/banner/ethereum.png"
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="./public/images/banner/ethereum-small.png"
+                  />
                   <img
                     src="./public/images/banner/ethereum.png"
                     alt="ethereum"
                   />
-                </div>
+                </picture>
 
-                <div class="banner-graphic__coin banner-graphic__coin--sub-3">
+                <picture
+                  class="banner-graphic__coin banner-graphic__coin--sub-3"
+                >
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./public/images/banner/stellar.png"
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="./public/images/banner/stellar-small.png"
+                  />
                   <img src="./public/images/banner/stellar.png" alt="stellar" />
-                </div>
+                </picture>
 
-                <div class="banner-graphic__coin banner-graphic__coin--sub-4">
+                <picture
+                  class="banner-graphic__coin banner-graphic__coin--sub-4"
+                >
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./public/images/banner/litecoin.png"
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="./public/images/banner/litecoin-small.png"
+                  />
                   <img
                     src="./public/images/banner/litecoin.png"
                     alt="litecoin"
                   />
-                </div>
+                </picture>
               </div>
             </div>
           </div>
@@ -298,9 +358,65 @@
       </div>
     </section>
 
+    <section class="signup mt-50 d-none-lg">
+      <div class="container">
+        <div>
+          <button
+            class="
+              w-lg-full
+              text-success
+              rounded
+              button button--lg button-outline button-outline--info
+            "
+          >
+            Sign up for early access
+          </button>
+        </div>
+        <div class="mt-50">
+          <ul class="social-media__list social-media__list--center">
+            <li class="social-media__item">
+              <a class="social-media__link" href="#">
+                <img
+                  src="public/images/icons/traderworm.svg"
+                  alt="facebook logo"
+                />
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="#">
+                <img
+                  src="public/images/icons/facebook.svg"
+                  alt="facebook logo"
+                />
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="#">
+                <img
+                  src="public/images/icons/telegram.svg"
+                  alt="telegram logo"
+                />
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="#">
+                <img
+                  src="public/images/icons/linkedin.svg"
+                  alt="linkedin logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <h3>Copyright © Traderworm 2021</h3>
-      <p>Terms and conditions • Privacy policy • About us</p>
+      <p>
+        Terms and conditions • Privacy policy • About us • Road map • Blog •
+        Contact us
+      </p>
     </footer>
 
     <script src="./src/js/lib/jquery.min.js"></script>

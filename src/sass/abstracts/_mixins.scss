@@ -16,4 +16,10 @@
       @content;
     }
   }
+
+  @if $breakpoint == iphone7 {
+    @media only screen and (max-width: 25.875em) {
+      @content;
+    }
+  }
 }

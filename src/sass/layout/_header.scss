@@ -80,6 +80,11 @@
 
   &__list {
     display: flex;
+
+    &--center {
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__item + &__item {

@@ -12,30 +12,7 @@ body.about-page {
       @include responsive(md) {
         font-size: 3.8rem;
         line-height: 6.6rem;
-        padding-top: 10rem;
-      }
-    }
-
-    &__banner {
-      background-image: url(../../public/images/about/polygon.png);
-      background-repeat: no-repeat;
-      background-position: center 50px;
-      height: 75rem;
-
-      @include responsive(md) {
-        height: 50rem;
-      }
-    }
-
-    &__banner--down {
-      background-image: url(../../public/images/about/polygon-down.png);
-      background-repeat: no-repeat;
-      background-position: center -150px;
-      height: 75rem;
-      padding-top: 20rem;
-
-      @include responsive(md) {
-        height: 50rem;
+        padding-top: 3rem;
       }
     }
   }
@@ -100,27 +77,22 @@ body.about-page {
   &-box {
     font-size: 2rem;
     line-height: 2.4rem;
-
+    min-height: 300px;
     padding: 2rem;
     position: relative;
 
-    background: #000;
-    background-clip: padding-box;
-    border: solid 1px transparent;
-    border-radius: 4px;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      margin: -1px;
-      border-radius: inherit;
-      background: linear-gradient(to bottom, rgba($color-white, 0.27), #000);
-    }
+    background: rgba($color-white, 0.03);
+    backdrop-filter: blur(134px);
+    border-radius: 9px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(
+      to bottom,
+      rgba($color-white, 0.27),
+      #000
+    );
+    overflow: hidden;
   }
 }
 
@@ -130,15 +102,21 @@ body.about-page {
 
 .team-member {
   &__avatar {
+    min-height: 146px;
+
     background-image: url(../../public/images/about/team/bg.png);
     background-repeat: no-repeat;
     background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include responsive(md) {
       background-size: 100px 100px;
 
       img {
-        width: 100px;
+        width: 60px;
       }
     }
   }
