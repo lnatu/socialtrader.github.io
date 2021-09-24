@@ -11,4 +11,14 @@
   * {
     font-weight: inherit;
   }
+
+  @include responsive(md) {
+    margin-top: 5rem;
+  }
+
+  @include responsive(sm) {
+    padding: 0 4rem;
+    font-size: 1.4rem;
+    margin-top: 5rem;
+  }
 }

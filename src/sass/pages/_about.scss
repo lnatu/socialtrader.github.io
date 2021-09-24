@@ -7,13 +7,20 @@ body.about-page {
     &__title {
       font-size: 7.2rem;
       line-height: 8.7rem;
-      padding-top: 25rem;
 
       @include responsive(md) {
         font-size: 3.8rem;
         line-height: 6.6rem;
-        padding-top: 3rem;
+        padding-top: 0rem;
       }
+    }
+
+    &__banner {
+      height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
@@ -70,6 +77,16 @@ body.about-page {
         line-height: 3rem;
       }
     }
+  }
+}
+
+.values {
+  background-image: url(../../public/images/about/symbol.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include responsive(md) {
+    background-size: 80%;
   }
 }
 

@@ -1,6 +1,18 @@
 .roadmap-section {
   padding: 10rem 0;
+
+  @include responsive(md) {
+    padding: 3rem 0;
+  }
+}
+
+.roadmap-page {
   background-image: url(../../public/images/about/symbol.png);
   background-repeat: no-repeat;
-  background-position: 90% 420px;
+  background-position: 120% 120%;
+
+  @include responsive(md) {
+    background-position: center;
+    background-size: 80%;
+  }
 }

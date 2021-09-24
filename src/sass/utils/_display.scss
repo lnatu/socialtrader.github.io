@@ -3,3 +3,9 @@
     display: none;
   }
 }
+
+@include responsive(lg) {
+  .d-none-below-lg {
+    display: none;
+  }
+}

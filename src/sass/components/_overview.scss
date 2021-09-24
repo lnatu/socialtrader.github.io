@@ -1,6 +1,10 @@
 .overview {
   margin-top: 20rem;
 
+  @include responsive(md) {
+    margin-top: 7rem;
+  }
+
   &-box {
     display: flex;
     align-items: center;
