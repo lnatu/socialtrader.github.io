@@ -11,6 +11,11 @@
 
 .banner-graphic {
   position: relative;
+  margin-top: -10rem;
+
+  @include responsive(xl) {
+    margin-top: 0;
+  }
 
   &__coin {
     position: absolute;

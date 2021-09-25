@@ -135,8 +135,8 @@
 }
 
 .nav-toggle {
-  width: 4rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 2rem;
 
   position: relative;
   cursor: pointer;
@@ -147,6 +147,7 @@
   }
 
   span {
+    border-radius: 999px;
     position: absolute;
     display: block;
     height: 3px;

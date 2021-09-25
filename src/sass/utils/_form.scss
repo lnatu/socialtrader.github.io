@@ -2,7 +2,7 @@
   border-radius: 8px;
   display: block;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem 2rem;
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 2.9rem;
@@ -14,7 +14,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  min-height: 7rem;
+  min-height: 4rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &::placeholder {
@@ -34,15 +34,17 @@
   }
 
   @include responsive(md) {
-    min-height: 4rem;
-    padding: 1rem 2rem;
-    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
   }
 }
 
 textarea.input {
   resize: none;
   min-height: 18.5rem;
+  @include responsive(md) {
+    min-height: 10rem;
+  }
 }
 
 form .input-outter + .input-outter {

@@ -2,6 +2,17 @@ body.about-page {
   overflow-x: hidden;
 }
 
+.polygon-2 {
+  margin-top: -15rem;
+  position: relative;
+  z-index: -1;
+
+  @include responsive(lg) {
+    margin-top: -10rem;
+    z-index: 1;
+  }
+}
+
 .about {
   &-section {
     &__title {

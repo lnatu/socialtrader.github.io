@@ -324,7 +324,11 @@ body {
       margin-top: 0; } }
 
 .banner-graphic {
-  position: relative; }
+  position: relative;
+  margin-top: -10rem; }
+  @media only screen and (max-width: 75em) {
+    .banner-graphic {
+      margin-top: 0; } }
   .banner-graphic__coin {
     position: absolute;
     z-index: 10;
@@ -455,7 +459,10 @@ body {
   line-height: 3.6rem;
   text-align: center;
   margin-top: 27rem;
-  padding-bottom: 2.4rem; }
+  padding-bottom: 2.4rem;
+  background-image: url(../../public/images/bg/ellipse-blur.png);
+  background-repeat: no-repeat;
+  background-position: center; }
   .footer * {
     font-weight: inherit; }
   @media only screen and (max-width: 48em) {
@@ -557,8 +564,8 @@ body {
     transform: translateY(0); }
 
 .nav-toggle {
-  width: 4rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 2rem;
   position: relative;
   cursor: pointer;
   z-index: 999; }
@@ -566,6 +573,7 @@ body {
     .nav-toggle {
       display: none; } }
   .nav-toggle span {
+    border-radius: 999px;
     position: absolute;
     display: block;
     height: 3px;
@@ -593,6 +601,15 @@ body {
 
 body.about-page {
   overflow-x: hidden; }
+
+.polygon-2 {
+  margin-top: -15rem;
+  position: relative;
+  z-index: -1; }
+  @media only screen and (max-width: 62em) {
+    .polygon-2 {
+      margin-top: -10rem;
+      z-index: 1; } }
 
 .about-section__title {
   font-size: 7.2rem;
@@ -707,7 +724,7 @@ body.contact-page {
   padding: 50px 0; }
   @media only screen and (max-width: 767.5px) {
     .contact-us {
-      height: auto; } }
+      padding: 30px 0; } }
 
 .roadmap-section {
   padding: 10rem 0; }
@@ -755,7 +772,7 @@ body.contact-page {
   border-radius: 8px;
   display: block;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem 2rem;
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 2.9rem;
@@ -767,7 +784,7 @@ body.contact-page {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  min-height: 7rem;
+  min-height: 4rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -782,13 +799,15 @@ body.contact-page {
     color: #b4b2bd; }
   @media only screen and (max-width: 48em) {
     .input {
-      min-height: 4rem;
-      padding: 1rem 2rem;
-      font-size: 1.6rem; } }
+      padding: 0.5rem 2rem;
+      font-size: 1.4rem; } }
 
 textarea.input {
   resize: none;
   min-height: 18.5rem; }
+  @media only screen and (max-width: 48em) {
+    textarea.input {
+      min-height: 10rem; } }
 
 form .input-outter + .input-outter {
   margin-top: 2.4rem; }
