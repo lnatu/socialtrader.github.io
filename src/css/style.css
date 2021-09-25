@@ -326,6 +326,11 @@ body {
 .banner-graphic {
   position: relative;
   margin-top: -10rem; }
+  @media only screen and (max-width: 23.4375em) {
+    .banner-graphic__bg img {
+      object-fit: contain;
+      width: 100%;
+      height: 250px; } }
   @media only screen and (max-width: 75em) {
     .banner-graphic {
       margin-top: 0; } }
@@ -333,6 +338,10 @@ body {
     position: absolute;
     z-index: 10;
     animation: 2s infinite spanAnimation; }
+    @media only screen and (max-width: 23.4375em) {
+      .banner-graphic__coin img {
+        object-fit: cover;
+        width: 70%; } }
     .banner-graphic__coin--lead {
       top: 12%;
       left: 4rem;
@@ -608,8 +617,7 @@ body.about-page {
   z-index: -1; }
   @media only screen and (max-width: 62em) {
     .polygon-2 {
-      margin-top: -10rem;
-      z-index: 1; } }
+      margin-top: -10rem; } }
 
 .about-section__title {
   font-size: 7.2rem;
@@ -618,14 +626,22 @@ body.about-page {
     .about-section__title {
       font-size: 3.8rem;
       line-height: 6.6rem;
-      padding-top: 0rem; } }
+      padding-top: 0rem;
+      margin-top: 5rem; } }
 
 .about-section__banner {
   height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  align-items: center; }
+  .about-section__banner--down {
+    padding-top: 10rem;
+    background-image: url(../../public/images/bg/ellipse-blur-2.png);
+    background-repeat: no-repeat;
+    background-position: center -500px; }
+    @media only screen and (max-width: 62em) {
+      .about-section__banner--down {
+        padding-top: 5rem; } }
 
 .culture-item__header {
   position: relative; }
@@ -667,39 +683,37 @@ body.about-page {
   background-position: center; }
   @media only screen and (max-width: 48em) {
     .values {
-      background-size: 80%; } }
+      background-size: 80%;
+      background-position: center 40%; } }
 
 .value-box {
   font-size: 2rem;
   line-height: 2.4rem;
-  min-height: 300px;
   padding: 2rem;
-  position: relative;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(134px);
-  border-radius: 9px;
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0.27), #000);
-  overflow: hidden; }
+  position: relative; }
+  @media (min-width: 992px) {
+    .value-box {
+      min-height: 300px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(134px);
+      border-radius: 9px;
+      border: 2px solid;
+      border-image-slice: 1;
+      border-width: 2px;
+      border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0.27), #000); } }
 
 .our-team {
   padding-bottom: 10rem; }
 
 .team-member__avatar {
   min-height: 146px;
-  background-image: url(../../public/images/about/team/bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media only screen and (max-width: 48em) {
-    .team-member__avatar {
-      background-size: 100px 100px; }
-      .team-member__avatar img {
-        width: 60px; } }
+  @media only screen and (max-width: 62em) {
+    .team-member__avatar img {
+      width: 150px; } }
 
 .team-member__name {
   font-size: 2rem;

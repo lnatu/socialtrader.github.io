@@ -9,7 +9,6 @@ body.about-page {
 
   @include responsive(lg) {
     margin-top: -10rem;
-    z-index: 1;
   }
 }
 
@@ -23,6 +22,7 @@ body.about-page {
         font-size: 3.8rem;
         line-height: 6.6rem;
         padding-top: 0rem;
+        margin-top: 5rem;
       }
     }
 
@@ -31,7 +31,18 @@ body.about-page {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      // justify-content: center;
+
+      &--down {
+        padding-top: 10rem;
+        background-image: url(../../public/images/bg/ellipse-blur-2.png);
+        background-repeat: no-repeat;
+        background-position: center -500px;
+
+        @include responsive(lg) {
+          padding-top: 5rem;
+        }
+      }
     }
   }
 }
@@ -98,6 +109,7 @@ body.about-page {
 
   @include responsive(md) {
     background-size: 80%;
+    background-position: center 40%;
   }
 }
 
@@ -105,22 +117,23 @@ body.about-page {
   &-box {
     font-size: 2rem;
     line-height: 2.4rem;
-    min-height: 300px;
     padding: 2rem;
     position: relative;
 
-    background: rgba($color-white, 0.03);
-    backdrop-filter: blur(134px);
-    border-radius: 9px;
-    border: 2px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: linear-gradient(
-      to bottom,
-      rgba($color-white, 0.27),
-      #000
-    );
-    overflow: hidden;
+    @media (min-width: 992px) {
+      min-height: 300px;
+      background: rgba($color-white, 0.03);
+      backdrop-filter: blur(134px);
+      border-radius: 9px;
+      border: 2px solid;
+      border-image-slice: 1;
+      border-width: 2px;
+      border-image-source: linear-gradient(
+        to bottom,
+        rgba($color-white, 0.27),
+        #000
+      );
+    }
   }
 }
 
@@ -131,20 +144,15 @@ body.about-page {
 .team-member {
   &__avatar {
     min-height: 146px;
-
-    background-image: url(../../public/images/about/team/bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @include responsive(md) {
-      background-size: 100px 100px;
-
+    @include responsive(lg) {
       img {
-        width: 60px;
+        width: 150px;
       }
     }
   }
