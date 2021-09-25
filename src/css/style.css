@@ -626,14 +626,19 @@ body.about-page {
     .about-section__title {
       font-size: 3.8rem;
       line-height: 6.6rem;
-      padding-top: 0rem;
-      margin-top: 5rem; } }
+      padding-top: 0rem; } }
 
 .about-section__banner {
   height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
+  .about-section__banner-bg {
+    transform: translateY(10rem); }
+    @media only screen and (max-width: 36em) {
+      .about-section__banner-bg {
+        transform: translateY(5rem); } }
   .about-section__banner--down {
     padding-top: 10rem;
     background-image: url(../../public/images/bg/ellipse-blur-2.png);
@@ -691,6 +696,10 @@ body.about-page {
   line-height: 2.4rem;
   padding: 2rem;
   position: relative; }
+  @media only screen and (max-width: 36em) {
+    .value-box {
+      font-size: 1.6rem;
+      line-height: 2rem; } }
   @media (min-width: 992px) {
     .value-box {
       min-height: 300px;
@@ -15347,12 +15356,15 @@ form .input-outter + .input-outter {
 .text-white {
   color: #fff; }
 
+blockquote {
+  font-size: 1.6rem; }
+
 .text-p {
   font-size: 2.4rem;
   line-height: 2.9rem; }
   @media only screen and (max-width: 36em) {
     .text-p {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       line-height: 2rem; } }
 
 .title {
