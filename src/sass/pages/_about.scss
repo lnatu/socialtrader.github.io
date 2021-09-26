@@ -162,6 +162,10 @@ body.about-page {
     align-items: center;
     justify-content: center;
 
+    img {
+      width: 146px;
+    }
+
     @include responsive(lg) {
       img {
         width: 150px;
